@@ -14,47 +14,65 @@ namespace live_well.Rooms
        // every apartment always has a livingroom, kitchen and a bath, along with a front and backdoor
 
 
-        private FrontDoor frontDoor;
-        public FrontDoor FrontDoor
+
+        
+
+        private protected FrontDoor frontDoor;
+        private protected FrontDoor FrontDoor
         {
             get { return frontDoor; }
         }
-        private BackDoor backDoor;
+        private protected BackDoor backDoor;
 
-        public BackDoor BackDoor
+        private protected BackDoor BackDoor
         {
             get { return backDoor; }
         }
 
         private int wpR; // windows per room    
 
-        public int WpR
+        private protected int WpR
         {
             get { return wpR; }
             set { wpR = value; }
         }
 
-        private Kitchen kitchen;
+        private Bedroom kitchen;
 
-        public Kitchen Kitchen
+        private protected Bedroom Kitchen
         {
             get { return kitchen; }
+            set { kitchen = value; }
+        }
+
+        private Bedroom bedroom;
+
+        private protected Bedroom Bedroom
+        {
+            get { return bedroom; }
+            set { bedroom = value; }
         }
 
 
-        public Apartment(int amountOfPanes)
+
+        public Apartment(int amountOfPanes, int amountOfRooms)
         {
             this.kitchen = new Kitchen(amountOfPanes);
             this.backDoor = new BackDoor();
             this.frontDoor = new FrontDoor();
+            
+
+
+            
 
         }
 
-        internal abstract void AddDoorsAndWindows();  // adds all doors and windows together in seperate variables
+        internal abstract int GetDoorCount();  // adds all doors and windows together in seperate variables
+        internal abstract int GetWindowCount();  // gets all windows
 
-        internal abstract void GetSize();  // gets size of apartment
+        internal abstract int GetSize(int AoR);  // gets size of apartment
 
-        internal abstract void GetRoomAmount();  // gets total amount of room count 
+        internal abstract int GetRoomAmount();  // gets total amount of room count 
 
 
     }

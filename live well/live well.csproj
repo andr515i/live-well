@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Rooms\Apartment Sizes\1 Rooms\OneRoomApartment.cs" />
-    <Compile Include="Rooms\Apartment Sizes\5 Rooms\FiveRoomApartment.cs" />
-    <Compile Include="Rooms\Apartment Sizes\4 Rooms\FourRoomApartment.cs" />
-    <Compile Include="Rooms\Apartment Sizes\3 Rooms\ThreeRoomApartment.cs" />
-    <Compile Include="Rooms\Apartment Sizes\2 Rooms\TwoRoomApartment.cs" />
     <Compile Include="Rooms\Apartment.cs" />
+    <Compile Include="Rooms\Apt\Apt.cs" />
     <Compile Include="Rooms\Doors\BackDoor.cs" />
     <Compile Include="Rooms\Bath.cs" />
     <Compile Include="Rooms\Doors\Door.cs" />

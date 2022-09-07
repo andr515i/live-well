@@ -11,7 +11,6 @@ namespace live_well.Rooms
     {
         public Kitchen(int amountOfPanes) : base(amountOfPanes)
         {
-
-            }
+        }
     }
 }

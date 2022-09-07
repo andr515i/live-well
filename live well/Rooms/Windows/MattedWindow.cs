@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace live_well
+namespace live_well.Rooms.Windows
 {
     class MattedWindow : Window
     {

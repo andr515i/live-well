@@ -11,25 +11,25 @@ namespace live_well.Rooms
 {  // i see a normal room as always having 1 door, atleast 1 window and it always has floor.
     class Bedroom
     {
-        private protected Floor floor;
+        private  Floor floor;
 
-        public Floor Floor
+        private protected Floor Floor
         {
             get { return floor; }
             set { floor = value; }
         }
 
-        private protected Window window;
+        private  Window window;
 
-        public Window Window
+        private protected Window Window
         {
             get { return window; }
             set { window = value; }
         }
 
-        private protected Door door;
+        private  Door door;
 
-        public Door Door
+        private protected Door Door
         {
             get { return door; }
             set { door = value; }

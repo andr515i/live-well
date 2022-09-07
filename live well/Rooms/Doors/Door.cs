@@ -8,5 +8,16 @@ namespace live_well.Rooms.Doors
 {
     class Door
     {
+        private string doorType;
+
+        public string DoorType
+        {
+            get { return doorType; }
+            set { doorType = value; }
+        }
+        public Door()
+        {
+            this.doorType = "new";
+        }
     }
 }
