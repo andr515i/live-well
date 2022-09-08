@@ -9,6 +9,8 @@ namespace live_well
 {
     class Program
     {
+        // https://app.diagrams.net/?libs=general;uml
+        // class diagram
         static void Main(string[] args)
         {
             Apt apt = new Apt(1, 0);  // 0 room apartment
